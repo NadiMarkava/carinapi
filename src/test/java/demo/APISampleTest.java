@@ -1,18 +1,18 @@
-package com.mycompany.carina.demo;
+package demo;
 
 import java.lang.invoke.MethodHandles;
 import java.time.temporal.ChronoUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 
+import api.DeleteUserMethod;
+import api.GetUserMethods;
+import api.PostUserMethod;
 import org.skyscreamer.jsonassert.JSONCompareMode;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.annotations.Test;
 
 import com.zebrunner.carina.core.IAbstractTest;
-import com.mycompany.carina.demo.api.DeleteUserMethod;
-import com.mycompany.carina.demo.api.GetUserMethods;
-import com.mycompany.carina.demo.api.PostUserMethod;
 import com.zebrunner.carina.api.APIMethodPoller;
 import com.zebrunner.carina.api.apitools.validation.JsonCompareKeywords;
 import com.zebrunner.carina.core.registrar.ownership.MethodOwner;
