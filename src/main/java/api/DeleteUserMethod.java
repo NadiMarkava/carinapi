@@ -12,7 +12,7 @@ import com.zebrunner.carina.utils.config.Configuration;
 @Endpoint(url = "${base_url}/users/1", methodType = HttpMethodType.DELETE)
 @RequestTemplatePath(path = "api/users/_delete/rq.json")
 @ResponseTemplatePath(path = "api/users/_delete/rs.json")
-@SuccessfulHttpStatus(status = HttpResponseStatusType.OK_200)
+@SuccessfulHttpStatus(status = HttpResponseStatusType.ACCEPTED_202)
 public class DeleteUserMethod extends AbstractApiMethodV2 {
 
     public DeleteUserMethod() {
